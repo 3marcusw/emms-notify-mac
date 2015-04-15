@@ -1,2 +1,3 @@
 # emms-notify-mac
-enables emms notifications on Mac OS X
+This is not a part of official emms.
+This enables emms notifications on Mac OS X.
