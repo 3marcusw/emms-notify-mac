@@ -7,8 +7,6 @@
 ;;; Code:
 
 (defvar terminal-notifier-command (executable-find "terminal-notifier") "The path to terminal-notifier.")
-; (terminal-notifier-notify "Emacs notification" "Something amusing happened")
-terminal-notifier-command
 (defun terminal-notifier-notify (title subtitle message contentImage)
   "Show a message with `terminal-notifier-command`.
 uses the TITLE SUBTITLE MESSAGE and CONTENTIMAGE."
