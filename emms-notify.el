@@ -40,6 +40,16 @@ uses the TITLE SUBTITLE MESSAGE and CONTENTIMAGE."
   (emms-browser-get-track-field(emms-playlist-current-selected-track) 'info-title)
   (emms-browser-get-track-field(emms-playlist-current-selected-track) 'info-artist)
   (emms-browser-get-track-field(emms-playlist-current-selected-track) 'info-album)
-  (get-path-of-cover)))
+  (get-path-of-cover))
+ (message
+  (concat
+  (emms-browser-get-track-field(emms-playlist-current-selected-track) 'info-title)
+  " - "
+  (emms-browser-get-track-field(emms-playlist-current-selected-track) 'info-artist)
+  " - "
+  (emms-browser-get-track-field(emms-playlist-current-selected-track) 'info-album)
+  ))
+ )
+
 (provide 'emms-notify)
 ;;; emms-notify.el ends here
